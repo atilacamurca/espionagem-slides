@@ -1,0 +1,680 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="img/banner.png"></span>
+  </article>
+</slide>
+
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="img/logo.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Introdução</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Sobre Mim</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Graduando em Ciência da Computação pelo IFCE Campus Maracanaú.</li>
+<li>7 anos de experiência com Linux.</li>
+<li>Organizador do COMSOLiD a 6 anos.</li>
+</ul>
+<p><img alt="Coordenação COMSOLiD" src="img/coordenacao-comsolid.jpg" style="width: 40%" class="center" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Introdução</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img alt="Charge Cazo" src="img/Espionagem-por-Cazo.jpg" /></p>
+<footer class="source">Nicolás Maduro e Dilma Rousseff</footer></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/ssl-bg.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>SSL</h2>
+      
+      <h3>Secure Socket Layer</h3>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Acesso seguro através da internet</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>Para acessar a internet com segurança usamos o protocolo SSL junto com o HTTP.</p>
+<p><img alt="SSL do Gmail" src="img/gmail-ssl.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Acesso seguro através da internet</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>SSL é uma nova camada de protocolo que opera em cima do protocolo TCP.</p>
+<p>Permite ambas as máquina, cliente e servidor, estabelecer uma conexão criptografada.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Acesso seguro através da internet</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Entretanto isso é uma especificação, ou seja, alguém tem que implementar.
+Alguns órgãos que a implementam:</p>
+<ul>
+<li>OpenSSL (<a href="openssl.org">http://www.openssl.org/</a>) - Implementação livre e gratuita do SSL.</li>
+<li>Apache-SSL (<a href="apache-ssl.org">http://www.apache-ssl.org/</a>) - um servidor web seguro,
+    baseado no OpenSSL.</li>
+<li>SSLeay (<a href="ftp://ftp.uni-mainz.de/pub/internet/security/ssl/SSL/">ftp://ftp.uni-mainz.de/pub/internet/security/ssl/SSL/</a>) - uma implementação
+    gratuita do Netscape's Secure Socket Layer.</li>
+<li>Planet SSL (<a href="http://www.rsasecurity.com/standards/ssl/developers.html">http://www.rsasecurity.com/standards/ssl/developers.html</a>) - provê SSL para
+    programas em C e Java.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Acesso seguro através da internet</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Exemplo de mesma implementação para problemas diferentes:</p>
+<p>multiplicação de 2 números:</p>
+<p><code>2 * 3</code></p>
+<p>ou</p>
+<p><code>2 + 2 + 2</code></p></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/sl-is-safe.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Software Livre é seguro?</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Software Livre é seguro?</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img alt="Códigos Compilados" src="img/codigos-compilados.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Software Livre é seguro?</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img alt="Códigos Interpretados" src="img/codigos-interpretados.png" /></p></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/ssl-safe.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>O quão é seguro uma criptografia usando SSL?</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide class="dark quote nobackground" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><p class="big text-center">
+    Levaria um tempo significativamente maior que a idade do universo para quebrar uma chave de 128-bits.
+</p>
+
+<p>Estima-se um pouco mais de 13 bilhões de anos.</p>
+<p>Fonte:</p>
+<ul>
+<li><a href="http://www.inet2000.com/public/encryption.htm">http://www.inet2000.com/public/encryption.htm</a></li>
+<li><a href="http://www.digicert.com/TimeTravel/math.htm">http://www.digicert.com/TimeTravel/math.htm</a></li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/hackers-crackers.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Hackers e Crackers</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Hackers e Crackers</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><strong>Crackers</strong> são pessoas que invadem computadores com propósitos criminais ou ganho pessoal.</p>
+<p>Enquanto <strong>Hackers</strong> podem ser especialistas em segurança contratados por empresas, com o
+objetivo de encontrar possíveis vulnerabilidades e saná-las.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Hackeando Google</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>Hackear é uma coisa boa! Alguns sites permitem que isso seja feito de forma
+a otimizar processos, como fazer uma <strong>busca</strong>. Vejamos um exemplo com o Google
+quando fazemos a seguinte busca:</p>
+<p><code>comsolid filetype:pdf</code></p>
+<p>Além de buscar a palavra <code>comsolid</code>, ele busca apenas arquivos <code>pdf</code>.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Hackeando Google</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>Ou ainda podemos fazer buscas em determinados sites somente. Basta fazer uma busca na forma:</p>
+<p><code>inkscape site:comsolid.org</code></p>
+<p>Essa busca pesquisa a palavra <code>inkscape</code> no site <code>comsolid.org</code></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Hackeando Duck Duck Go</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><strong>Duck Duck Go</strong> é um motor de busca preocupado com a pesquisa em si e sua privacidade.</p>
+<p><a href="https://duckduckgo.com/">https://duckduckgo.com/</a></p>
+<p>Possui parte de seu código livre, isso inclui plugins, add-ons, etc. Página do github:</p>
+<p><a href="https://github.com/duckduckgo/">https://github.com/duckduckgo/</a></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Hackeando Duck Duck Go</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Duck Duck Go permite <em>hacks</em> mais engenhosos. Vamos a eles:</p>
+<ul>
+<li><strong>!g comsolid</strong> - busca comsolid no google</li>
+<li><strong>expand http://va.mu/dIwg</strong> - mostra a URL original</li>
+<li><strong>ip address</strong> - mostra seu endereço IP</li>
+<li><strong>github sige</strong> - mostra repositórios do github</li>
+<li><strong>@comsolid</strong> - mostra usuário do Twitter</li>
+<li><strong>age of linus torvalds</strong> - diz a idade</li>
+<li><strong>define free software</strong> - define uma palavra ou frase</li>
+<li><strong>weather in fortaleza</strong> - mostra a previsão do tempo</li>
+<li><strong>daft punk soundcloud</strong> - busca músicas no soundcloud</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Hackeando Duck Duck Go</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>Temos ainda o <a href="http://duckduckhack.com/">http://duckduckhack.com/</a></p>
+<p><img alt="Duck Duck Hack" src="img/duckduckhack.png" /></p></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/passwd.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Técnicas para quebrar senhas</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Técnicas para quebrar senhas</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>A técnica mais conhecida e natural é a força bruta, ou seja, tentar todas
+as combinações possíveis até encontrar. Isso funciona até certo ponto, quando
+a entrada é pequena.</p>
+<p>Num artigo escrito por Dan Goodin no site <a href="http://arstechnica.com">http://arstechnica.com</a> em que descreve como
+Kevin Young, um pesquisador de segurança de senhas, procedeu para descriptografar
+senhas vazadas pelo <strong>Antisec</strong> de uma empresa chamada <strong>Stratfor</strong>.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Técnicas para quebrar senhas</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Após quebrar 60% das senhas usando listas de senhas disponíveis em:</p>
+<ul>
+<li>Hashcat - <a href="http://hashcat.net/oclhashcat-plus/">http://hashcat.net/oclhashcat-plus/</a></li>
+<li>John the Ripper  - <a href="http://www.openwall.com/john/">http://www.openwall.com/john/</a></li>
+</ul>
+<p>Para os outros 40% ele ficou "sem palavras", então onde encontrá-las?</p>
+<p>Que tal Wikipedia, Youtube, Bíblia, Projeto Gutenberg?</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Técnicas para quebrar senhas</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vleft"><p>Uma das senhas era "crotalus atrox", nome científico de uma cobra. Tal senha foi quebrada
+graças a esta página da Wikipedia: <a href="https://en.wikipedia.org/wiki/Crotalus_atrox">https://en.wikipedia.org/wiki/Crotalus_atrox</a></p>
+<p>Em seguida outras senhas fortes por serem grandes foram encontradas como:</p>
+<ul>
+<li>"from genesis to revelations" (26)</li>
+<li>"I cant remember anything" (24)</li>
+<li>"thereisnofatebutwhatwemake" (26)</li>
+<li>"givemelibertyorgivemedeath" (26)</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/leak.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Vazamento de senhas do Linkedin</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Vazamento de senhas do Linkedin</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p>Em Junho de 2012 um usuário anônimo postou no site <a href="http://insidepro.com/">http://insidepro.com/</a>
+uma lista com 6.5 milhões de hashs únicos referentes a senhas pedindo ajuda
+para recuperá-las.</p>
+<p>Após quebrar muitas das senhas descobriu-se que se tratava de um banco de senhas
+do site Linkedin. Essa descoberta foi possível pelo número de senhas com a palavra
+<em>linkedin</em>.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Vazamento de senhas do Linkedin</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Na lista existiam:</p>
+<ul>
+<li>1 - linkedin (4408)</li>
+<li>2 - link (2638)</li>
+<li>3 - linked (2135)</li>
+</ul>
+<p>Outras senhas encontradas:</p>
+<ul>
+<li>8  - love (1018)</li>
+<li>11 - password (856)</li>
+<li>16 - abc (750)</li>
+</ul>
+<p>Mais informações em: <a href="http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-07.pdf">http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-07.pdf</a></p></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/backdoor.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Backdoor em Roteador D-Link</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Engenharia reversa em firmware D-Link</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Todos sabemos que a D-Link é especializada em fazer roteadores, e eles são um bom
+local para <em>backdoors</em>. E isso foi exatamente que Craig Heffner autor no blog
+<a href="http://www.devttys0.com">http://www.devttys0.com</a> encontrou.</p>
+<p>Ele encontrou a partir de uma engenharia reversa no firmware de uma dos roteadores.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Engenharia reversa em firmware D-Link</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Após notar que certa função chamada <code>alpha_auth_check</code> soava suspeita, ele foi
+saber o que exatamente ela fazia. Após um tempo ele chegou no seguinte trecho de
+código:</p>
+<pre class="prettyprint">
+int alpha_auth_check(struct http_request_t *request) {
+   if(strstr(request->url, "graphic/") ||
+      strstr(request->url, "public/") ||
+      <b>strcmp(request->user_agent,
+          "xmlset_roodkcableoj28840ybtide") == 0</b>) {
+      return AUTH_OK;
+   } else {
+      if(check_login(request->0xC, request->0xE0) != 0) {
+         return AUTH_OK;
+      }
+   }
+   return AUTH_FAIL;
+}
+</pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Engenharia reversa em firmware D-Link</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Baseado no código fonte das páginas HTML e outros detalhes é sensato concluir que
+os seguintes modelos são afetados:</p>
+<ul>
+<li>DIR-100</li>
+<li>DIR-120</li>
+<li>DI-624S</li>
+<li>DI-524UP</li>
+<li>DI-604S</li>
+<li>DI-604UP</li>
+<li>DI-604+</li>
+<li>TM-G5240</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Engenharia reversa em firmware D-Link</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Quem quiser fazer um teste real existe um código em Python escrito pelo próprio
+Craig e pode ser encontrado em:</p>
+<p><a href="http://pastebin.com/vbiG42VD">http://pastebin.com/vbiG42VD</a></p>
+<pre class="prettyprint">
+# Normally only admins can access the tools_misc.xgi page;
+# use the backdoor user-agent to bypass authentication
+import urllib2
+# ...
+req = urllib2.Request(url+buf,
+    headers={
+        <b>'User-Agent': 'xmlset_roodkcableoj28840ybtide'</b>
+    })
+urllib2.urlopen(req)
+</pre></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/kernel-attack.png)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Ataque ao Kernel GNU/Linux</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Ataque ao Kernel GNU/Linux</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><a href="http://linux.slashdot.org/story/13/10/09/1551240/the-linux-backdoor-attempt-of-2003">http://linux.slashdot.org/story/13/10/09/1551240/the-linux-backdoor-attempt-of-2003</a></p>
+<p>Em 2003, houve uma tentativa de backdoor no Kernel do Linux.</p>
+<pre class="prettyprint">
+/* ... */
+if ((options == (__WCLONE|__WALL))
+    && (current->uid = 0))
+        retval = -EINVAL;
+/* ... */
+</pre>
+
+<p>Bastava chamar a função <code>wait4</code> e você viraria <em>root</em>.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Ataque ao Kernel GNU/Linux</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Comparemos os códigos original e o backdoor, e vejam se encontram a diferença.</p>
+<pre class="prettyprint">
+/* ... */
+if ((options == (__WCLONE|__WALL))
+    && (current->uid = 0))
+        retval = -EINVAL;
+/* ... */
+</pre>
+
+<pre class="prettyprint">
+/* ... */
+if ((options == (__WCLONE|__WALL))
+    && (current->uid == 0))
+        retval = -EINVAL;
+/* ... */
+</pre></article>
+ 
+</slide>
+
+<slide class="segue nobackground fill" style="background-image: url(img/marco-civil.jpg)">
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Marco Civil da Internet no Brasil</h2>
+      
+    </hgroup>
+  
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Marco Civil da Internet no Brasil</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><strong>O que é Marco Civil?</strong></p>
+<p>É um projeto de Lei que visa estabelecer direitos e deveres na utilização da Internet no Brasil.
+É a constituição da Internet no país.</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Marco Civil da Internet no Brasil</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li><strong>Neutralidade</strong>: proíbe que provedores de internet discriminem certos serviços
+    em detrimento de outros.</li>
+<li><strong>Armazenamento de dados</strong>: Operação de coleta de dados no Brasil deve respeitar
+    a privacidade, proteção dos dados e sigilo das comunicações privadas.</li>
+<li><strong>Retirada de conteúdo</strong>: entidades que oferecem conteúdo e aplicações só serão
+    responsabilizadas por danos gerados por terceiros se não acatarem ordem
+    judicial exigindo a retirada dessas publicações.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Marco Civil da Internet no Brasil</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li><strong>Fim do marketing dirigido</strong>: as empresas de acesso não poderão "espiar" o conteúdo
+    das informações trocadas pelos usuários na rede. Há interesse em fazer isso com
+    fins comerciais, como para publicidade.</li>
+<li><strong>Sigilo e privacidade</strong>: Provedores de acesso à internet serão obrigados a guardar
+    os registros das horas de acesso e do fim da conexão dos usuários pelo prazo de
+    seis meses, mas isso deve ser feito em ambiente controlado.</li>
+</ul>
+<p>Para mais detalhes: <a href="http://www.molon1313.com.br/marco-civil-da-internet/">http://www.molon1313.com.br/marco-civil-da-internet/</a></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Onde encontrar essa palestra?</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img alt="Maracatux" src="img/maracatux.png" style="width: 45%" class="center" /></p>
+
+<p>Você pode baixar essa palestra e ainda outras </p>
+<p class="big">
+    <a href="http://sige.comsolid.org/u/atilacamurca">http://sige.comsolid.org/u/atilacamurca</a>
+</p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="img/logo.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>Dúvidas?</h2>
+      
+    </hgroup>
+  
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="img/logo.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Obrigado pela aten&ccedil;&atilde;o!&gt;</h2>
+    <p>Qualquer d&uacute;vida entre em contato.</p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
