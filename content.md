@@ -9,6 +9,8 @@ title: Sobre Mim
 * 7 anos de experiência com Linux.
 * Organizador do COMSOLiD a 6 anos.
 
+<p><img alt="Coordenação COMSOLiD" src="img/coordenacao-comsolid.jpg" style="width: 40%" class="center" /></p>
+
 ---
 
 title: Introdução
@@ -100,7 +102,7 @@ class: segue dark nobackground
 class: dark quote nobackground
 content_class: flexbox vleft
 
-<p class="big">
+<p class="big text-center">
 	Levaria um tempo significativamente maior que a idade do universo para quebrar uma chave de 128-bits.
 </p>
 
