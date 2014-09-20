@@ -476,7 +476,7 @@ h2 {
 
 /* line 287, ../scss/default.scss */
 h3 {
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: -1px;
   line-height: 2;
   font-weight: inherit;
@@ -806,6 +806,22 @@ slide.fill {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+slide.fill h2, slide.fill h3 {
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* Size variants */
@@ -1232,6 +1248,7 @@ article.smaller q:before, article.smaller q:after {
 .segue h3 {
   color: #e6e6e6;
   line-height: 2.8;
+  font-weight: bold;
 }
 /* line 820, ../scss/default.scss */
 .segue hgroup {
@@ -1410,8 +1427,8 @@ aside.gdbar img {
 }
 
 p.big {
-	font-size: 35pt;
-	font-weight: bold;
+  font-size: 35pt;
+  font-weight: bold;
 }
 
 .text-center {
@@ -1419,9 +1436,13 @@ p.big {
 }
 
 img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-circle {
+  border-radius: 50%;
 }
 
 @media print {

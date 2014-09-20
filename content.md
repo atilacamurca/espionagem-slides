@@ -24,7 +24,8 @@ content_class: flexbox vcenter
 
 title: SSL
 subtitle: Secure Socket Layer
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/ssl-bg.jpg
 
 ---
 
@@ -76,7 +77,8 @@ ou
 ---
 
 title: Software Livre é seguro?
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/sl-is-safe.jpg
 
 ---
 
@@ -95,7 +97,8 @@ content_class: flexbox vcenter
 ---
 
 title: O quão é seguro uma criptografia usando SSL?
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/ssl-safe.jpg
 
 ---
 
@@ -116,7 +119,8 @@ Fonte:
 ---
 
 title: Hackers e Crackers
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/hackers-crackers.jpg
 
 ---
 
@@ -193,7 +197,8 @@ Temos ainda o <http://duckduckhack.com/>
 ---
 
 title: Técnicas para quebrar senhas
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/passwd.jpg
 
 ---
 
@@ -240,7 +245,8 @@ Em seguida outras senhas fortes por serem grandes foram encontradas como:
 ---
 
 title: Vazamento de senhas do Linkedin
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/leak.jpg
 
 ---
 
@@ -276,7 +282,8 @@ Mais informações em: <http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-07.
 ---
 
 title: Backdoor em Roteador D-Link
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/backdoor.jpg
 
 ---
 
@@ -352,7 +359,8 @@ urllib2.urlopen(req)
 ---
 
 title: Ataque ao Kernel GNU/Linux
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/kernel-attack.png
 
 ---
 
@@ -397,7 +405,8 @@ if ((options == (__WCLONE|__WALL))
 ---
 
 title: Marco Civil da Internet no Brasil
-class: segue dark nobackground
+class: segue nobackground fill
+image: img/marco-civil.jpg
 
 ---
 
@@ -437,6 +446,8 @@ Para mais detalhes: <http://www.molon1313.com.br/marco-civil-da-internet/>
 
 title: Onde encontrar essa palestra?
 content_class: flexbox vcenter
+
+<p><img alt="Maracatux" src="img/maracatux.png" style="width: 45%" class="center" /></p>
 
 Você pode baixar essa palestra e ainda outras 
 
